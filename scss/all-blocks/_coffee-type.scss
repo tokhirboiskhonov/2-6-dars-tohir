@@ -1,0 +1,78 @@
+.coffee-type .container {
+    position: relative;
+    margin-bottom: 200px;
+    padding-bottom: 150px;
+}
+
+.coffee__inner {
+    padding-top: 100px;
+    padding-bottom: 315px;
+    background-color: #2C343E;
+    border-radius: 10px;
+    text-align: center;
+    color: #FEFCF7;
+}
+
+.coffee__heading {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.coffee__text {
+    width: 540px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.coffee__list {
+    position: absolute;
+    display: flex;
+    column-gap: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;   
+}
+
+.coffee__item {
+    width: 350px;
+    padding: 48px;
+    padding-top: 72px;
+    background-color: #0E8784;
+    border-radius: 8px;
+
+    &::before {
+        width: 72px;
+        height: 72px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 56px;
+        background-image: url(../../image-two/best-quality.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        content: "";
+    }
+
+    &:nth-child(2)::before {
+        background-image: url(../../image-two/exclusive-benefits.svg);
+    }
+    
+    &:nth-child(3)::before {
+        background-image: url(../../image-two/free-shipping.svg);
+    }
+}
+
+.coffee__item__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.coffee__item__text {
+    margin: 0;
+}

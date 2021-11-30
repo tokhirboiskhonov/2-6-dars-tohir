@@ -1,0 +1,23 @@
+.footer__inner {
+    display: flex;
+    align-items: center;
+    margin-top: 168px;
+    padding: 47px 85px;
+    background-color: #2C343E;
+}
+
+.footer .logo-link {
+    margin-right: 100px;
+}
+
+.footer .nav {
+    margin-right: auto;
+}
+
+.footer .nav__link--active {
+    color: #FEFCF7;
+}
+ 
+.footer .nav__link:hover {
+    color: #FEFCF7;
+}

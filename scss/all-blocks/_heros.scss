@@ -1,0 +1,38 @@
+.heros .container {
+    margin-bottom: -350px;
+}
+
+.heros__inner {
+    padding: 115px 85px;
+    width: 1475px;
+    height: 980px;
+    margin-top: 45px;
+    border-radius: 20px;
+    background-image: url(../../create-yplan/tinypng/Bitmap.png);
+    background-repeat: no-repeat;
+}
+
+.heros__heading {
+    width: 485px;
+    margin-top: 0;
+    left: 79px;
+    top: -144px;
+    font-family: 'Fraunces' 9pt serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+}
+
+.heros__text {
+    width: 445px;
+    margin-top: 32px;
+    font-family: 'Barlow' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    opacity: 0.8;
+}

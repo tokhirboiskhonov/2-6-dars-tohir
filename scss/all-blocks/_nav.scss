@@ -1,0 +1,30 @@
+.nav {
+    .nav__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__item + .nav__item {
+        padding-left: 33px;
+    }
+    
+    .nav__link {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #83888F;
+        transition: color 0.25s ease;
+    }
+
+    .nav__link:hover {
+        color: #333d4b;
+    }
+
+    .nav__link--active {
+        color: #333d4b;
+    }
+
+}
