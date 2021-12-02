@@ -3,16 +3,16 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 170px;
-}
 
-.our-commitment .container::before {
-    content: "";
-    display: inline-block;
-    width: 445px;
-    height: 520px;
-    background-image: url(../../about-image/png/our-commitment.png);
-    background-position: right 0 top 0;
-    border-radius: 8px;
+    &::before {
+            content: "";
+            display: inline-block;
+            width: 445px;
+            height: 520px;
+            background-image: url(../../images/image-second/png/our-commitment.jpg);
+            background-position: right 0 top 0;
+            border-radius: 8px;
+    }
 }
 
 .our-commitment__inner {
@@ -31,3 +31,17 @@
     font-size: 40px;
     line-height: 48px;
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .our-commitment .container::before {
+        background-image: url(../../images/image-second/png/our-commitment@2x.png);
+    }
+    
+    /* Retina-specific stuff here */
+} 

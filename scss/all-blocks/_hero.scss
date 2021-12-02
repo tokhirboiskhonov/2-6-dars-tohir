@@ -8,7 +8,7 @@
     height: 600px;
     margin-top: 45px;
     border-radius: 10px;
-    background-image: url(../../image/png/Bitmap.png);
+    background-image: url(../../images/image-first/png/Bitmap.png);
 }
 
 .hero__heading {
@@ -58,3 +58,17 @@
 .button:disabled {
     background-color: #e2dedb;
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .hero__inner {
+        background-image: url(../../images/image-first/png-optimization/Bitmap@2x.png);
+    }
+    
+    /* Retina-specific stuff here */
+} 

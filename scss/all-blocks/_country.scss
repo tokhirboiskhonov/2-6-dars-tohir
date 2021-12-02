@@ -22,18 +22,18 @@
     width: 50px;
     height: 50px;
     margin-bottom: 45px;
-    background-image: url(../../about-image/svg/UK.svg);
+    background-image: url(../../images/image-second/svg/UK.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 center;
 }
 
 .country:nth-child(2)::before{
-    background-image: url(../../about-image/svg/Canada.svg);
+    background-image: url(../../images/image-second/svg/Canada.svg);
 }
 
 .country:nth-child(3)::before{
-    background-image: url(../../about-image/svg/Australia.svg);
+    background-image: url(../../images/image-second/svg/Australia.svg);
 }
 
 .country__name {
@@ -49,3 +49,25 @@
     text-decoration: none;
     color: #333D4B;
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .country::before {
+        background-image: url(../../images/image-second/svg/UK@2x.png);
+    }
+
+    .country:nth-child(2)::before{
+        background-image: url(../../images/image-second/svg/Canada@2x.png);
+    }
+    
+    .country:nth-child(3)::before{
+        background-image: url(../../images/image-second/svg/Australia@2x.png);
+    }
+    
+    /* Retina-specific stuff here */
+} 

@@ -8,7 +8,7 @@
     height: 980px;
     margin-top: 45px;
     border-radius: 20px;
-    background-image: url(../../create-yplan/tinypng/Bitmap.png);
+    background-image: url(../../images/image-third/Bitmap-2.jpg);
     background-repeat: no-repeat;
 }
 
@@ -36,3 +36,16 @@
     color: #FEFCF7;
     opacity: 0.8;
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .heros__inner {
+        background-image: url(../../images/image-third/Bitmap-2@2x.png);
+    }
+    /* Retina-specific stuff here */
+} 
