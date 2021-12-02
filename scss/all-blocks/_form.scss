@@ -1,0 +1,65 @@
+.form {
+    width: 730px;
+}
+
+.form__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888f;
+    cursor: pointer;
+    
+    &::after {
+        content: "";
+        width: 18px;
+        height: 12px;
+        background-image: url(../../images/vektor.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.form__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 88px;
+}
+
+.form__controller {
+    display: block;
+    width: 230px;
+    padding: 32px 28px;
+    padding-bottom: 84px;
+    background-color: #f4f1eb;
+    border-radius: 8px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+
+    &:hover {
+        background-color: #fdd6ba;
+    }
+}
+
+.form__option__name {
+    display: block;
+    margin-bottom: 24px;
+    font-family: "Fraunces", "Times new roman", serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.form__option__text {
+    display: block;
+}
+
+.form__radio:checked + .form__controller {
+    background-color: #0e8784;
+    color: #fefcf7;
+}
+
