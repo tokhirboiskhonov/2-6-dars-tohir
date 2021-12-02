@@ -5,15 +5,24 @@
 
 
 .checklist__heading {
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 56px;
-    padding: 0;
-    font-family: 'Fraunces', serif;
-    font-style: normal;
-    font-weight: 900;
     font-size: 40px;
     line-height: 48px;
-    color: #83888F;
+    color: #83888f;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        width: 18px;
+        height: 12px;
+        background-image: url('../../images/vektor.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
 }
 
 .checklist__list {
@@ -75,3 +84,17 @@
 .checklist__input:checked {
     background-color: red;
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .checklist__heading::before {
+        background-image: url(../../images/vektor@2x.png);
+    }
+    
+    /* Retina-specific stuff here */
+} 
