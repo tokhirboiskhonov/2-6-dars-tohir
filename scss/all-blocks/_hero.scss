@@ -73,3 +73,31 @@ only screen and (                min-resolution: 2dppx) {
     
     /* Retina-specific stuff here */
 } 
+
+
+@media only screen and (max-width: 768px) {
+    .hero .container {
+        margin-bottom: 145px;
+    }
+    
+    .hero__inner {
+        width: 690px;
+        height: 500px;
+        background-image: url(../../images/image-first/png/Bitmap-690px.jpg);
+    }
+
+    .hero__heading {
+        width: 330px;
+        margin-bottom: 24px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .hero__text {
+        width: 398px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

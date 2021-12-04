@@ -64,3 +64,14 @@ h1, h2, h3, h4, h5, h6 {
 .container--small {
     width: 1140px;
 }
+
+@media only screen and (max-width: 768px) {
+    
+    .container {
+        width: 768px;
+    }
+
+    .container--small {
+        width: 690px;
+    }
+}

@@ -21,3 +21,26 @@
 .footer .nav__link:hover {
     color: #FEFCF7;
 }
+
+
+@media only screen and (max-width:768px) {
+    .footer__inner {
+        flex-direction: column; 
+    }
+
+    .logo-link__image {
+        margin-left: 100px;
+        margin-bottom: 34px;
+    }
+
+    .navs {
+        margin: 0 auto;
+        margin-bottom: 65px;
+    }
+
+    .social-list {
+        margin: 0 auto;
+        margin-bottom: 54px;
+    }
+
+}

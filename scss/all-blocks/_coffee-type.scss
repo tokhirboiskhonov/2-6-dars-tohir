@@ -1,60 +1,73 @@
-.coffee-type .container {
-    position: relative;
-    margin-bottom: 200px;
-    padding-bottom: 150px;
-}
-
 .coffee__inner {
-    padding-top: 100px;
-    padding-bottom: 315px;
-    background-color: #2C343E;
-    border-radius: 10px;
-    text-align: center;
-    color: #FEFCF7;
+    position: relative;
+	padding-top: 100px;
+	padding-bottom: 315px;
+	background-color: #333d4b;
+	border-radius: 10px;
 }
 
 .coffee__heading {
-    margin: 0;
-    margin-bottom: 32px;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 48px;
-}
+    margin-top: 0;
+	margin-bottom: 24px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
+	color: #fefcf7;}
 
 .coffee__text {
-    width: 540px;
-    margin: 0 auto;
-    opacity: 0.8;
+    max-width: 540px;
+	width: 100%;
+	margin: 0 auto;
+    margin-bottom: 70px;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: center;
+	color: #fefcf7;
+	opacity: 0.8;
 }
 
 .coffee__list {
     position: absolute;
-    display: flex;
-    column-gap: 30px;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 0;   
+	bottom: 0;
+	right: 50%;
+	transform: translate(50%, 40%);
+	max-width: 1110px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;   
 }
 
 .coffee__item {
-    width: 350px;
-    padding: 48px;
-    padding-top: 72px;
-    background-color: #0E8784;
-    border-radius: 8px;
+    max-width: 350px;
+	width: 100%;
+	padding: 48px;
+	padding-top: 72px;
+	text-align: center;
+	color: #fefcf7;
+	background-color: #0e8784;
+	border-radius: 8px;
 
-    &::before {
-        width: 72px;
-        height: 72px;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 56px;
-        background-image: url(../../images/image-first/png-optimization/best-quality.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        content: "";
-    }
+	& + & {
+		margin-left: 30px;
+	}
+
+     &::before {
+         display: block;
+         width: 56px;
+         height: 56px;
+         margin: 0 auto;
+         margin-bottom: 56px;
+         background-image: url(../../images/image-first/png-optimization/best-quality.png);
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         content: "";
+     }
 
     &:nth-child(2)::before {
         background-image: url(../../images/image-first/svg/exclusive-benefits.svg);
@@ -66,15 +79,18 @@
 }
 
 .coffee__item__title {
-    margin: 0;
-    margin-bottom: 24px;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
+    width: 255px;
+    margin-top: 41px;
+	margin-bottom: 16px;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 32px;
 }
 
 .coffee__item__text {
     margin: 0;
+	font-size: 15px;
+	line-height: 25px;
 }
 
 @media
@@ -97,3 +113,71 @@ only screen and (                min-resolution: 2dppx) {
     }
     /* Retina-specific stuff here */
 } 
+
+@media only screen and (max-width: 1015px) {
+	.coffee__inner {
+		padding-top: 56px;
+		padding-bottom: 370px;
+	}
+
+	.coffee__list {
+		max-width: 70%;
+		flex-direction: column;
+		bottom: 0;
+		transform: translate(50%, 50%);
+	}
+
+	.coffee__item {
+		max-width: 100%;
+		display: flex;
+		align-items: center;
+		text-align: left;
+		padding: 40px 70px;
+
+		& + & {
+			margin-left: 0;
+			margin-top: 24px;
+		}
+
+		&::before {
+			flex-shrink: 0;
+			margin-bottom: 0;
+			margin-right: 55px;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.coffee__list {
+		width: 575px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.coffee__inner {
+		padding-top: 65px;
+		padding-bottom: 660px;
+	}
+
+	.coffee__heading {
+		font-size: 28px;
+		line-height: 28px;
+	}
+
+	.coffee__text {
+		max-width: 80%;
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	.coffee__item {
+		flex-direction: column;
+		padding: 72px 32px;
+		padding-bottom: 48px;
+
+		&::before {
+			margin: 0;
+			margin-bottom: 56px;
+		}
+	}
+}
