@@ -74,7 +74,7 @@ only screen and (                min-resolution: 2dppx) {
     /* Retina-specific stuff here */
 } 
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width: 375px) {
     .hero .container {
         margin-bottom: 120px;
     }
