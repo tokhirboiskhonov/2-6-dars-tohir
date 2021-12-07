@@ -1,34 +1,37 @@
 .steps .container {
-    margin-top: 315px;
     margin-bottom: 200px;
 }
 
 .steps__heading {
-    margin: 0;
     margin-bottom: 95px;
-    font-weight: 900;
     font-size: 24px;
     line-height: 32px;
+    font-weight: 900;
     color: #83888F;
 }
 
 .steps__list {
     display: grid;
+    min-width: inherit;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 64px;
 }
 
 .steps__item {
     position: relative;
-    margin-bottom: 64px;
+    max-width: 100%;
+    width: 100%;
     padding-top: 82px;
+    padding-right: 20px;
 
     &::before {
         position: absolute;
-        display: inline-block;
+        display: block;
         top: 0;
         transform: translateY(-50%);
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
         background-color: #FEFCF7;
         border: 2px solid #0E8784;
         border-radius: 50%;
@@ -36,11 +39,11 @@
     }
 
     &::after {
-        display: inline-block;
+        display: block;
         position: absolute;
         z-index: -1;
         top: 0;
-        left: 15px;
+        left: 16px;
         transform: translateY(-50%);
         width: 100%;
         height: 2px;
@@ -55,7 +58,7 @@
 
 
 
-.steps__number {
+.steps__div__number {
     display: block;
     margin-bottom: 38px;
     font-family: "Fraunces", "Times new roman", sans-serif;
@@ -66,45 +69,133 @@
 }
 
 .steps__title {
-    width: 265px;
-    margin: 0;
+    display: block;
+    max-width: 265px;
     margin-bottom: 42px;
-    font-weight: 900;
     font-size: 32px;
     line-height: 36px;
 }
 
 .steps__text {
-    width: 300px;
-    margin: 0;
+    max-width: 300px;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 900px) {
     .steps .container {
-        margin-bottom: 144px;
+        margin-bottom: 150px;
     }
-    
+
     .steps__heading {
-        margin-top: 500px;
+        margin-bottom: 55px;
     }
 
-    .steps__number {
-        margin-bottom: 42px;
+    .steps__list {
+        margin-bottom: 44px;
     }
 
-    .steps__title {
-        width: 223px;
+    .steps__div {
         margin-bottom: 38px;
-        font-size: 28px;
-        line-height: 32px;
-        color: #333d4b;
+
+        &__title {
+            max-width: 223px;
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+
+    .steps__item {
+        padding-top: 62px;
     }
 
     .steps__text {
-        width: 223px;
-        margin-bottom: 44px;
         font-size: 15px;
         line-height: 25px;
-        color: #333d4b;
     }
 }
+
+@media only screen and(max-width:660px) {
+    .steps .container {
+        margin-bottom: 120px;
+    }
+
+    .steps__heading {
+        margin-bottom: 88px;
+        text-align: center;
+    }
+
+    .steps__list {
+        grid-template-columns: none;
+        margin-bottom: 80px;
+    }
+
+    .steps__item {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 56px;
+
+        &::before {
+            content: none;
+        }
+
+        &::after {
+            content: none;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .steps__div {
+        margin-bottom: 24px;
+        text-align: center;
+
+        &__count {
+            margin-bottom: 24px;
+        }
+
+        &__title {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .steps__text {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .steps__link {
+        margin: 0 auto;
+    }
+}
+
+// @media only screen and (max-width:768px) {
+//     .steps .container {
+//         margin-bottom: 144px;
+//     }
+    
+//     .steps__heading {
+//         margin-top: 500px;
+//     }
+
+//     .steps__number {
+//         margin-bottom: 42px;
+//     }
+
+//     .steps__title {
+//         width: 223px;
+//         margin-bottom: 38px;
+//         font-size: 28px;
+//         line-height: 32px;
+//         color: #333d4b;
+//     }
+
+//     .steps__text {
+//         width: 223px;
+//         margin-bottom: 44px;
+//         font-size: 15px;
+//         line-height: 25px;
+//         color: #333d4b;
+//     }
+// }

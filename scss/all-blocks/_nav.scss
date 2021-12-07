@@ -5,26 +5,27 @@
     }
 
     .nav__item + .nav__item {
-        padding-left: 33px;
+        margin-left: 33px;
     }
     
     .nav__link {
-        font-weight: bold;
         font-size: 12px;
         line-height: 15px;
+        font-weight: bold;
         letter-spacing: 0.923077px;
         text-decoration: none;
         text-transform: uppercase;
         color: #83888F;
-        transition: color 0.25s ease;
+        transition: color 0.25s ease, background-color 0.25s ease;
     }
 
     .nav__link:hover {
-        color: #333d4b;
+        color: darkcyan;
     }
 
     .nav__link--active {
-        color: #333d4b;
+        color: darkcyan;
     }
 
 }
+
