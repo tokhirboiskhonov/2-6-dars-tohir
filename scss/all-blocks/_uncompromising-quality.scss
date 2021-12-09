@@ -9,23 +9,24 @@
     padding-bottom: 175px;
     background-color: #2C343E;
     border-radius: 10px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 105px;
+        display: inline-block;
+        width: 445px;
+        height: 475px;
+        background-image: url(../../images/image-second/png/Uncompromising-quality.jpg);
+        background-position: center top -50px;
+        border-radius: 8px;
+    }
 }
 
 .uncompromising-quality__info {
-    width: 540px;
-}
-
-.uncompromising-quality__inner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 105px;
-    display: inline-block;
-    width: 445px;
-    height: 475px;
-    background-image: url(../../images/image-second/png/Uncompromising-quality.jpg);
-    background-position: center top -50px;
-    border-radius: 8px;
+    max-width: 540px;
+    width: 100%;
 }
 
 .uncompromising-quality__heading {
@@ -43,16 +44,91 @@
     opacity: 0.8;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-    .our-commitment .container::after {
-        background-image: url(../../images/image-second/png/Uncompromising-quality@2x.png);
-    }
+// @media
+// only screen and (-webkit-min-device-pixel-ratio: 2),
+// only screen and (   min--moz-device-pixel-ratio: 2),
+// only screen and (     -o-min-device-pixel-ratio: 2/1),
+// only screen and (        min-device-pixel-ratio: 2),
+// only screen and (                min-resolution: 192dpi),
+// only screen and (                min-resolution: 2dppx) { 
+//     .our-commitment .container::after {
+//         background-image: url(../../images/image-second/png/Uncompromising-quality@2x.png);
+//     }
     
-    /* Retina-specific stuff here */
-} 
+//     /* Retina-specific stuff here */
+// } 
+
+@media only screen and (max-width: 768px) {
+
+    .uncompromising-quality__inner::after {
+        content: '';
+        position: absolute;
+        top: -50px;
+        right: 50%;
+        transform: translateX(50%);
+        margin-bottom: 65px;
+        display: inline-block;
+        max-width: 573px;
+        width: 100%;
+        min-height: 320px;
+        background-image: url(../../images/image-tablet/Uncompromising-quality-tablet.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .uncompromising-quality__info {
+        max-width: 688px;
+        width: 100%;
+        max-height: 500px;
+        height: 100%;
+    }
+
+    .uncompromising-quality__heading {
+        margin-top: 100px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .uncompromising-quality__text {
+        margin-top: 24px;
+        margin-bottom: 67px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .uncompromising-quality__inner::after {
+        content: '';
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+        display: inline-block;
+        max-width: 280px;
+        width: 100%;
+        height: 155px;
+        margin-left: 10px;
+        background-image: url(../../images/image-mobile/Uncompromising-quality-mobile.jpg);
+        background-size: contain;
+    }
+
+    .uncompromising-quality__info {
+        max-width: 327px;
+        width: 100%;
+        height: 587px;
+        padding-left: 24px;
+        padding-right: 24px;    
+    }
+
+    .uncompromising-quality__heading {
+        margin-top: 64px;
+        margin-bottom: 24px;
+        text-align: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        max-width: 279px;
+        width: 100%;
+        font-size: 28px;
+        line-height: 28px;
+
+    }
+}
